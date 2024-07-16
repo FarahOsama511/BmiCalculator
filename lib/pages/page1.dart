@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:bmi/main.dart';
 import 'package:bmi/pages/page2.dart';
 import 'package:flutter/material.dart';
@@ -209,8 +207,9 @@ class Page extends State<Page1> {
                   SizedBox(
                     width: 20,
                   ),
-                  Container(
-                    width: 180,
+                  Expanded(
+                      child: Container(
+                    width: 170,
                     height: 190,
                     color: Color.fromARGB(255, 50, 50, 68),
                     child: Column(
@@ -254,7 +253,7 @@ class Page extends State<Page1> {
                         )
                       ],
                     ),
-                  ),
+                  )),
                 ],
               ),
             ),
