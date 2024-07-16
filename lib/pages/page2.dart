@@ -18,7 +18,7 @@ class Page2 extends StatelessWidget {
             width: double.infinity,
             height: double.infinity,
             color: Color.fromARGB(255, 7, 22, 48),
-            child: Padding(
+            child: const Padding(
               padding: EdgeInsets.only(top: 22, left: 10),
               child: Text(
                 "Your Result",
@@ -66,8 +66,7 @@ class Page2 extends StatelessWidget {
                 Text(
                   bmiCategory,
                   style: TextStyle(
-                    color:
-                        bmiCategory == "OVERWEIGHT" ? Colors.red : Colors.green,
+                    color: Colors.green,
                     fontWeight: FontWeight.w400,
                     fontSize: 20,
                   ),
